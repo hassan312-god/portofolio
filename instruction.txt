@@ -1,0 +1,88 @@
+# Portfolio Développeur Junior - Instructions de Mise en Place
+
+## 📌 Objectif
+Créer un portfolio professionnel pour présenter mes compétences, projets, et faciliter le contact avec des recruteurs ou clients potentiels.
+
+---
+
+## 🗂 Structure du projet
+
+/
+├── index.html         -> Page d'accueil
+├── about.html         -> À propos
+├── projects.html      -> Liste de projets
+├── skills.html        -> Mes compétences
+├── contact.html       -> Formulaire de contact
+├── cv.pdf             -> Mon CV (téléchargeable)
+├── /assets
+│     ├── /css         -> Feuilles de style CSS
+│     ├── /js          -> Scripts JavaScript
+│     └── /images      -> Images, icônes, illustrations
+└── README.md          -> Documentation technique (optionnel)
+
+---
+
+## 🛠 Technologies utilisées
+
+Frontend :
+- HTML5 / CSS3 / JavaScript (vanilla ou framework React/Next.js)
+- Framework CSS recommandé : TailwindCSS ou Bootstrap (optionnel)
+- Typographies : Google Fonts (ex. Poppins, Open Sans)
+
+Backend (optionnel) :
+- Node.js + Express
+- Supabase ou Firebase (NoSQL, Auth simplifiée)
+
+Déploiement :
+- Vercel ou Netlify (gratuit)
+
+---
+
+## 🚀 Étapes d'installation locale
+
+1️⃣ Cloner le dépôt :
+> git clone https://github.com/hassan312-god/portofolio.git
+
+2️⃣ Aller dans le dossier :
+> cd portfolio
+
+3️⃣ Ouvrir le projet avec VS Code ou un éditeur :
+> code .
+
+4️⃣ Personnaliser le contenu dans chaque page :
+- Remplacer les textes par mes informations
+- Ajouter mes projets réels ou fictifs
+- Vérifier les liens (GitHub, LinkedIn)
+
+5️⃣ Déploiement (exemple avec Vercel) :
+> npm install -g vercel
+> vercel
+
+---
+
+## 📫 Contact à ajouter
+
+- Email pro : hassan302025@outlook.fr
+- GitHub : https://github.com/hassan312-god
+- LinkedIn : https://linkedin.com/in/tonprofil
+
+---
+
+## ✅ Checklist avant mise en ligne
+- [ ] Texte relu et corrigé
+- [ ] Images optimisées
+- [ ] Liens fonctionnels
+- [ ] CV à jour (format PDF)
+- [ ] Responsive mobile testé
+
+---
+
+## 🔔 Conseils
+- Toujours versionner avec Git (commit régulier)
+- Ajouter un fichier README.md si publication sur GitHub
+- Garder le design sobre et professionnel
+- Si débutant : privilégier HTML/CSS avant React
+
+---
+
+Rédigé par : Hassan Bacri KEITA

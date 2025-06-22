@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassan Dev - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Hassan Dev</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="cv.pdf" class="cv-link">Télécharger mon CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Salut, moi c'est <span class="highlight">Hassan</span></h1>
+      <h2>Développeur Web Junior</h2>
+      <a href="#projets" class="btn-main">Voir mes projets</a>
+    </section>
+    <section id="projets" class="projects-section">
+      <h3>Projets</h3>
+      <div class="projects-list">
+        <div class="project-card">Projet 1</div>
+        <div class="project-card">Projet 2</div>
+        <div class="project-card">Projet 3</div>
+      </div>
+    </section>
+    <section class="skills-about">
+      <div class="skills">
+        <h3>Compétences</h3>
+        <div class="skills-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+      <div class="about">
+        <h3>À propos</h3>
+        <div class="about-content">
+          <div class="photo"></div>
+          <div>
+            <strong>Petite bio / photo</strong>
+            <p>Développeur passionné...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <form class="contact-form">
+        <h3>Envoyer</h3>
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:hassan302025@outlook.fr"><img src="assets/images/mail.svg" alt="Email"></a>
+        <a href="https://github.com/hassan312-god" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
+        <a href="https://linkedin.com/in/tonprofil" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html> 
