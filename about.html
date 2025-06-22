@@ -9,31 +9,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Hassan Dev</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="skills.html">Compétences</a></li>
-        <li><a href="about.html" class="active">À propos</a></li>
-        <li><a href="cv.pdf" class="cv-link">Télécharger mon CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Hassan Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <main>
-    <section class="about-page">
-      <h1>À propos de moi</h1>
-      <hr class="separator">
-      <div class="about-content">
-        <div class="photo large"></div>
-        <div>
-          <h2>Hassan Bacri KEITA</h2>
-          <p>Développeur web junior passionné par la création de sites modernes et performants. J'aime apprendre de nouvelles technologies et relever des défis techniques.<br><br>Parcours :<br>- Formation en développement web (HTML, CSS, JavaScript, React, Node.js)<br>- Réalisation de plusieurs projets personnels et académiques<br>- Veille technologique et auto-formation continue</p>
-        </div>
+    <section class="main-header py-5 bg-white text-center fade-init">
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <img src="assets/images/photo.jpg" alt="Photo de Hassan" class="rounded-circle shadow mb-4" width="140" height="140" style="object-fit:cover;">
+        <h1 class="display-6 fw-bold mb-2">À propos de moi</h1>
+        <h2 class="h5 text-secondary mb-3">Hassan Bacri KEITA</h2>
+        <p class="header-desc mb-4 col-12 col-md-8 mx-auto">Développeur web junior passionné par la création de sites modernes et performants. J'aime apprendre de nouvelles technologies et relever des défis techniques.<br><br>Parcours :<br>- Formation en développement web (HTML, CSS, JavaScript, React, Node.js)<br>- Réalisation de plusieurs projets personnels et académiques<br>- Veille technologique et auto-formation continue</p>
+      </div>
+    </section>
+    <section class="py-5 fade-init">
+      <div class="container text-center">
+        <a href="https://deliverip2p.netlify.app/" class="btn-git-deploy btn btn-lg" target="_blank" rel="noopener" aria-label="Voir le projet DeliverIP2P sur Netlify">
+          <img src="assets/images/github.svg" alt="GitHub">
+          Voir le projet DeliverIP2P sur Netlify
+        </a>
       </div>
     </section>
   </main>
+  <footer class="main-footer bg-white border-top text-center py-4 mt-5">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-4 mb-2">
+        <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="28" height="28"></a>
+        <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="28" height="28"></a>
+        <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
+      </div>
+      <p class="mb-0 small text-secondary">&copy; 2024 Hassan Bacri KEITA. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html> 

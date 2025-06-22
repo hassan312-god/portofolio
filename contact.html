@@ -9,36 +9,90 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Hassan Dev</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="skills.html">Compétences</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="cv.pdf" class="cv-link">Télécharger mon CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Hassan Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <main>
-    <section class="contact-section">
-      <h1>Contact</h1>
-      <hr class="separator">
-      <form class="contact-form">
-        <h2>Envoyer un message</h2>
-        <input type="text" name="name" placeholder="Nom" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-      <div class="contact-links">
-        <a href="mailto:hassan302025@outlook.fr"><img src="assets/images/mail.svg" alt="Email"></a>
-        <a href="https://github.com/hassan312-god" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
-        <a href="https://linkedin.com/in/tonprofil" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+    <section class="contact-section py-5 fade-init">
+      <div class="container">
+        <h1 class="text-center mb-5">Contact</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form class="contact-form" id="contactForm" novalidate>
+              <input type="text" name="name" placeholder="Nom" required class="form-control mb-3">
+              <input type="email" name="email" placeholder="Email" required class="form-control mb-3">
+              <textarea name="message" placeholder="Message" required class="form-control mb-3"></textarea>
+              <button type="submit" class="btn-main btn btn-lg w-100">Envoyer</button>
+              <div id="formFeedback" class="mt-3 visually-hidden"></div>
+            </form>
+            <div class="contact-infos mt-4 d-flex justify-content-center gap-4">
+              <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="36" height="36"></a>
+              <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="36" height="36"></a>
+              <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="36" height="36"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 fade-init">
+      <div class="container text-center">
+        <a href="https://deliverip2p.netlify.app/" class="btn-git-deploy btn btn-lg" target="_blank" rel="noopener" aria-label="Voir le projet DeliverIP2P sur Netlify">
+          <img src="assets/images/github.svg" alt="GitHub">
+          Voir le projet DeliverIP2P sur Netlify
+        </a>
       </div>
     </section>
   </main>
+  <footer class="main-footer bg-white border-top text-center py-4 mt-5">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-4 mb-2">
+        <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="28" height="28"></a>
+        <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="28" height="28"></a>
+        <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
+      </div>
+      <p class="mb-0 small text-secondary">&copy; 2024 Hassan Bacri KEITA. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // Feedback visuel formulaire contact
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('formFeedback');
+      feedback.classList.remove('visually-hidden');
+      feedback.classList.add('alert', 'alert-success');
+      feedback.textContent = 'Merci pour votre message ! Je vous répondrai rapidement.';
+      this.reset();
+      setTimeout(() => {
+        feedback.classList.add('visually-hidden');
+        feedback.classList.remove('alert', 'alert-success');
+        feedback.textContent = '';
+      }, 4000);
+    });
+    // Dark mode toggle
+    const darkBtn = document.createElement('button');
+    darkBtn.className = 'btn btn-sm btn-dark position-fixed top-0 end-0 m-3';
+    darkBtn.innerHTML = '🌙';
+    darkBtn.title = 'Activer/désactiver le mode sombre';
+    document.body.appendChild(darkBtn);
+    darkBtn.onclick = () => {
+      document.body.classList.toggle('dark');
+    };
+  </script>
 </body>
 </html> 

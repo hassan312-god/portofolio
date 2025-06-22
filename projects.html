@@ -9,41 +9,82 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Hassan Dev</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html" class="active">Projets</a></li>
-        <li><a href="skills.html">Compétences</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="cv.pdf" class="cv-link">Télécharger mon CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Hassan Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <main>
-    <section class="projects-list-page">
-      <h1>Mes Projets</h1>
-      <hr class="separator">
-      <div class="projects-list">
-        <div class="project-card">
-          <h2>Projet 1</h2>
-          <p>Site vitrine pour une association. <br>Technos : HTML, CSS, JavaScript</p>
-          <a href="#" class="btn-main">Voir le projet</a>
-        </div>
-        <div class="project-card">
-          <h2>Projet 2</h2>
-          <p>Application de gestion de tâches. <br>Technos : React, Node.js, MongoDB</p>
-          <a href="#" class="btn-main">Voir le projet</a>
-        </div>
-        <div class="project-card">
-          <h2>Projet 3</h2>
-          <p>Portfolio personnel responsive. <br>Technos : HTML, CSS, JavaScript</p>
-          <a href="#" class="btn-main">Voir le projet</a>
+    <section class="portfolio-section py-5 fade-init">
+      <div class="container">
+        <h1 class="text-center mb-5">Mes Projets</h1>
+        <div class="row g-4 portfolio-gallery justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet1.jpg" alt="Projet 1" class="img-fluid rounded-top">
+              <div class="portfolio-info p-3">
+                <span class="portfolio-category">Web Design</span>
+                <h3 class="h6 fw-bold mt-2">Site vitrine association</h3>
+                <p>Création d'un site moderne pour une association.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet2.jpg" alt="Projet 2" class="img-fluid rounded-top">
+              <div class="portfolio-info p-3">
+                <span class="portfolio-category">App</span>
+                <h3 class="h6 fw-bold mt-2">Gestion de tâches</h3>
+                <p>Application web pour organiser ses tâches au quotidien.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet3.jpg" alt="Projet 3" class="img-fluid rounded-top">
+              <div class="portfolio-info p-3">
+                <span class="portfolio-category">Mobile</span>
+                <h3 class="h6 fw-bold mt-2">App mobile</h3>
+                <p>Développement d'une app mobile pour un client.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Ajoute d'autres projets ici -->
         </div>
       </div>
     </section>
+    <section class="py-5 fade-init">
+      <div class="container text-center">
+        <a href="https://deliverip2p.netlify.app/" class="btn-git-deploy btn btn-lg" target="_blank" rel="noopener" aria-label="Voir le projet DeliverIP2P sur Netlify">
+          <img src="assets/images/github.svg" alt="GitHub">
+          Voir le projet DeliverIP2P sur Netlify
+        </a>
+      </div>
+    </section>
   </main>
+  <footer class="main-footer bg-white border-top text-center py-4 mt-5">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-4 mb-2">
+        <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="28" height="28"></a>
+        <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="28" height="28"></a>
+        <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
+      </div>
+      <p class="mb-0 small text-secondary">&copy; 2024 Hassan Bacri KEITA. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html> 
