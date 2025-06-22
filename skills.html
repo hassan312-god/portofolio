@@ -3,109 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compétences - Hassan Dev</title>
+  <title>Compétences - Hassan Bacri KEITA</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/newstyle.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-2">
+<body class="dark-portfolio">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top py-2">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Hassan Dev</a>
+      <a class="navbar-brand fw-bold text-white" href="index.html">HASSAN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainNav">
         <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
           <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="skills.html">Compétences</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <main>
-    <section class="main-header py-5 bg-white text-center fade-init">
-      <div class="container d-flex flex-column align-items-center justify-content-center">
-        <h1 class="display-6 fw-bold mb-2">Mes Compétences</h1>
-        <h2 class="h5 text-secondary mb-3">Ce que je maîtrise</h2>
-        <p class="header-desc mb-4 col-12 col-md-8 mx-auto">Voici un aperçu de mes compétences techniques principales, illustrées par des icônes modernes.</p>
-      </div>
-    </section>
-    <section class="py-5 fade-init">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-sm-6 col-lg-4 d-flex">
-            <div class="service-card w-100 text-center p-4 h-100">
-              <img src="assets/images/business.svg" alt="HTML" class="mb-3" width="40" height="40">
-              <h3 class="h5 fw-bold">HTML5 / CSS3</h3>
-              <p>Structure et style de pages web modernes, responsive et accessibles.</p>
+  <main class="bg-black text-white py-5 min-vh-100">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-4 text-center">Mes Compétences</h1>
+      <p class="text-center mb-5">Voici un aperçu de mes principales compétences techniques et outils que j'utilise au quotidien.</p>
+      <div class="row g-5">
+        <div class="col-md-6">
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>HTML5</span><span>95%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 95%; background: #FFC43A;"></div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 d-flex">
-            <div class="service-card w-100 text-center p-4 h-100">
-              <img src="assets/images/code.svg" alt="JavaScript" class="mb-3" width="40" height="40">
-              <h3 class="h5 fw-bold">JavaScript / React</h3>
-              <p>Développement d'interfaces dynamiques et applications web interactives.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>CSS3</span><span>90%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background: #FFC43A;"></div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 d-flex">
-            <div class="service-card w-100 text-center p-4 h-100">
-              <img src="assets/images/code.svg" alt="Node.js" class="mb-3" width="40" height="40">
-              <h3 class="h5 fw-bold">Node.js / MongoDB</h3>
-              <p>Création d'API, gestion de bases de données NoSQL, backend moderne.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span>88%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: #FFC43A;"></div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 d-flex">
-            <div class="service-card w-100 text-center p-4 h-100">
-              <img src="assets/images/design.svg" alt="UI/UX" class="mb-3" width="40" height="40">
-              <h3 class="h5 fw-bold">UI/UX Design</h3>
-              <p>Conception d'interfaces intuitives et expérience utilisateur optimale.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>React</span><span>80%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 80%; background: #FFC43A;"></div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 d-flex">
-            <div class="service-card w-100 text-center p-4 h-100">
-              <img src="assets/images/marketing.svg" alt="SEO" class="mb-3" width="40" height="40">
-              <h3 class="h5 fw-bold">SEO</h3>
-              <p>Optimisation du référencement naturel pour une meilleure visibilité.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>Node.js</span><span>75%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 75%; background: #FFC43A;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>MongoDB</span><span>70%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 70%; background: #FFC43A;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>Git & GitHub</span><span>85%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 85%; background: #FFC43A;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>SEO</span><span>70%</span></div>
+            <div class="progress" style="height: 8px; background: #222;">
+              <div class="progress-bar" role="progressbar" style="width: 70%; background: #FFC43A;"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="py-5 fade-init">
-      <div class="container text-center">
-        <a href="https://deliverip2p.netlify.app/" class="btn-git-deploy btn btn-lg" target="_blank" rel="noopener" aria-label="Voir le projet DeliverIP2P sur Netlify">
-          <img src="assets/images/github.svg" alt="GitHub">
-          Voir le projet DeliverIP2P sur Netlify
-        </a>
-      </div>
-    </section>
+    </div>
   </main>
-  <footer class="main-footer bg-white border-top text-center py-4 mt-5">
+  <footer class="bg-black text-center py-4 mt-5 border-0">
     <div class="container">
       <div class="d-flex justify-content-center gap-4 mb-2">
         <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="28" height="28"></a>
         <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="28" height="28"></a>
         <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
       </div>
-      <p class="mb-0 small text-secondary">&copy; 2024 Hassan Bacri KEITA. Tous droits réservés.</p>
+      <p class="mb-0 small text-secondary">&copy; 2025 Hassan Bacri KEITA. Portfolio personnel.</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    // Dark mode toggle
-    const darkBtn = document.createElement('button');
-    darkBtn.className = 'btn btn-sm btn-dark position-fixed top-0 end-0 m-3';
-    darkBtn.innerHTML = '🌙';
-    darkBtn.title = 'Activer/désactiver le mode sombre';
-    document.body.appendChild(darkBtn);
-    darkBtn.onclick = () => {
-      document.body.classList.toggle('dark');
-    };
-  </script>
 </body>
 </html> 

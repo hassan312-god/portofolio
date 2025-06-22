@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hassan Dev - Portfolio</title>
+  <title>Hassan Bacri KEITA - Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/newstyle.css">
 </head>
-<body style="font-family: 'Inter', Arial, sans-serif; background: #f7f8fa; color: #23243a;">
+<body class="dark-portfolio">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-2">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top py-2">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">Hassan Dev</a>
+      <a class="navbar-brand fw-bold text-white" href="index.html">HASSAN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainNav">
         <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
           <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="agence.html">Notre agence</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-lg-2" href="inscription.html">S'inscrire</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- HERO HEADER -->
-  <header class="py-5 bg-gradient" style="background: linear-gradient(90deg, #5f6fff 0%, #a259ff 100%); color: #fff;">
-    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5">
-      <div class="flex-fill">
-        <h1 class="display-4 fw-bold mb-3">Je crée des solutions <span style="color:#ffd700;">innovantes</span> pour votre business</h1>
-        <p class="lead mb-4">Développeur web passionné, je combine design moderne, technologies récentes et approche data-driven pour booster votre présence digitale.</p>
-        <a href="services.html" class="btn btn-warning btn-lg fw-bold shadow-sm me-3">Découvrir mes services</a>
-        <a href="contact.html" class="btn btn-outline-light btn-lg fw-bold">Contactez-moi</a>
-      </div>
-      <div class="flex-fill text-center">
-        <img src="assets/images/hero-illustration.svg" alt="Illustration développeur" class="img-fluid" style="max-width: 350px;">
+  <!-- HERO -->
+  <header class="hero-section d-flex align-items-center min-vh-100 bg-black text-white">
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-lg-row">
+        <div class="col-lg-6 text-center text-lg-start">
+          <span class="text-gold fw-bold mb-2 d-block" style="color:#FFC43A;">HELLO !</span>
+          <h1 class="display-3 fw-bold mb-2">Je suis <span class="text-gold" style="color:#FFC43A;">Hassan Bacri KEITA</span></h1>
+          <h2 class="h4 mb-4">Développeur Web Fullstack</h2>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="contact.html" class="btn btn-gold btn-lg px-4">Me contacter</a>
+            <a href="projects.html" class="btn btn-outline-light btn-lg px-4">Mes projets</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+          <img src="assets/images/photo.jpg" alt="Photo de Hassan" class="rounded-circle shadow" width="260" height="260" style="object-fit:cover; border:6px solid #FFC43A;">
+        </div>
       </div>
     </div>
   </header>
-
   <!-- SERVICES -->
   <section class="py-5">
     <div class="container">
@@ -152,14 +158,14 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-white border-top text-center py-4 mt-5">
+  <footer class="bg-black text-center py-4 mt-5 border-0">
     <div class="container">
       <div class="d-flex justify-content-center gap-4 mb-2">
         <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="28" height="28"></a>
         <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="28" height="28"></a>
         <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
       </div>
-      <p class="mb-0 small text-secondary">&copy; 2025 Hassan Bacri KEITA. Tous droits réservés.</p>
+      <p class="mb-0 small text-secondary">&copy; 2025 Hassan Bacri KEITA. Portfolio personnel.</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
