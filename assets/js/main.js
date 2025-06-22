@@ -23,4 +23,23 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('main section').forEach(section => {
   section.classList.add('fade-init');
   observer.observe(section);
-}); 
+});
+
+// Animation fade-in au scroll
+function revealOnScroll() {
+  const elements = document.querySelectorAll('.fade-init');
+  const windowHeight = window.innerHeight;
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < windowHeight - 60) {
+      el.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+// Préparation dark mode (toggle à ajouter dans le futur)
+// function toggleDarkMode() {
+//   document.body.classList.toggle('dark');
+// } 

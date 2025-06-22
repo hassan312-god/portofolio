@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Hassan Dev</title>
+  <title>Notre agence - Hassan Dev</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/newstyle.css">
@@ -19,8 +19,8 @@
         <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
           <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="agence.html">Notre agence</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="agence.html">Notre agence</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-lg-2" href="inscription.html">S'inscrire</a></li>
         </ul>
       </div>
@@ -28,26 +28,50 @@
   </nav>
   <header class="py-5 bg-gradient" style="background: linear-gradient(90deg, #5f6fff 0%, #a259ff 100%); color: #fff;">
     <div class="container text-center">
-      <h1 class="display-5 fw-bold mb-3">Contact</h1>
-      <p class="lead mb-0">Discutons de votre projet ou de vos besoins !</p>
+      <h1 class="display-5 fw-bold mb-3">Notre agence</h1>
+      <p class="lead mb-0">Une équipe passionnée, experte et à l'écoute de vos besoins.</p>
     </div>
   </header>
   <main>
     <section class="py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6">
-            <form class="card border-0 shadow-sm p-4 fade-init" id="contactForm" novalidate>
-              <input type="text" name="name" placeholder="Nom" required class="form-control mb-3">
-              <input type="email" name="email" placeholder="Email" required class="form-control mb-3">
-              <textarea name="message" placeholder="Message" required class="form-control mb-3"></textarea>
-              <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer</button>
-              <div id="formFeedback" class="mt-3 visually-hidden"></div>
-            </form>
-            <div class="contact-infos mt-4 d-flex justify-content-center gap-4">
-              <a href="mailto:hassan302025@outlook.fr" aria-label="Email" target="_blank"><img src="assets/images/mail.svg" alt="Email" width="36" height="36"></a>
-              <a href="https://github.com/hassan312-god" aria-label="GitHub" target="_blank"><img src="assets/images/github.svg" alt="GitHub" width="36" height="36"></a>
-              <a href="https://www.linkedin.com/in/hassan-bacri-keita" aria-label="LinkedIn" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn" width="36" height="36"></a>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img src="assets/images/team-illustration.svg" alt="Équipe" class="img-fluid mb-4 mb-lg-0" style="max-width: 320px;">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-3 text-primary">Notre expertise</h2>
+            <ul class="list-unstyled fs-5 mb-4">
+              <li class="mb-2"><strong>Développement web</strong> sur-mesure</li>
+              <li class="mb-2"><strong>Design UI/UX</strong> moderne et accessible</li>
+              <li class="mb-2"><strong>Stratégie digitale</strong> orientée résultats</li>
+              <li class="mb-2"><strong>Accompagnement</strong> et suivi personnalisé</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-lg fw-bold">Contactez l'agence</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h3 class="fw-bold mb-4">Nos valeurs</h3>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <h4 class="h6 fw-bold text-primary mb-2">Innovation</h4>
+              <p>Nous restons à la pointe des tendances et technologies pour vous offrir le meilleur.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <h4 class="h6 fw-bold text-primary mb-2">Transparence</h4>
+              <p>Communication claire et honnête à chaque étape de votre projet.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <h4 class="h6 fw-bold text-primary mb-2">Excellence</h4>
+              <p>Nous visons l'excellence dans chaque réalisation, petite ou grande.</p>
             </div>
           </div>
         </div>
@@ -66,21 +90,5 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    // Feedback visuel formulaire contact
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const feedback = document.getElementById('formFeedback');
-      feedback.classList.remove('visually-hidden');
-      feedback.classList.add('alert', 'alert-success');
-      feedback.textContent = 'Merci pour votre message ! Je vous répondrai rapidement.';
-      this.reset();
-      setTimeout(() => {
-        feedback.classList.add('visually-hidden');
-        feedback.classList.remove('alert', 'alert-success');
-        feedback.textContent = '';
-      }, 4000);
-    });
-  </script>
 </body>
 </html> 
