@@ -1,173 +1,377 @@
+/* Import Bootstrap dans le HTML, donc ici on ne garde que les personnalisations nécessaires */
+
 body {
+  background: #f8f9fa;
+  color: #23272f;
   font-family: 'Poppins', Arial, sans-serif;
-  background: #fdfcf7;
-  color: #222;
-  margin: 0;
-  padding: 0;
 }
-header {
+
+.main-header {
   background: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 8px #0001;
+  border-bottom: 1px solid #ececec;
+  padding: 2.5rem 0 2rem 0;
 }
-.logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-nav {
+.header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+.header-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 32px #e91e6333;
+  border: 4px solid #fff;
 }
-.nav-links a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
+.header-info {
+  flex: 1;
 }
-.cv-link {
-  color: #c0392b;
-  border: 1px solid #c0392b;
-  padding: 0.2em 0.7em;
-  border-radius: 5px;
-  font-size: 0.95em;
+.welcome {
+  color: #e91e63;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
-.hero {
-  text-align: center;
-  margin: 3rem 0 2rem 0;
-}
-.hero h1 {
+.header-info h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.hero .highlight {
-  color: #222;
   font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
 }
-.hero h2 {
-  font-size: 1.5rem;
-  color: #444;
+.accent {
+  color: #e91e63;
+}
+.header-desc {
+  color: #6c757d;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
+.header-socials a {
+  display: inline-block;
+  margin-right: 0.7rem;
+  transition: transform 0.2s;
+}
+.header-socials a:hover {
+  transform: scale(1.15);
+}
 .btn-main {
-  background: #d35d4e;
+  background: #e91e63;
   color: #fff;
-  padding: 0.9em 2.2em;
   border: none;
   border-radius: 8px;
+  padding: 0.7em 2em;
   font-size: 1.1em;
-  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #e91e6333;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 1.2rem;
   text-decoration: none;
   display: inline-block;
-  margin-top: 1rem;
 }
-.projects-section {
-  margin: 2rem 0;
+.btn-main:hover {
+  background: #d81b60;
+  box-shadow: 0 4px 24px #e91e6344;
 }
-.projects-list {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 1rem;
+
+.what-i-do {
+  padding: 3rem 0 2rem 0;
+  background: #fff;
 }
-.project-card {
-  background: #f3f1ea;
-  padding: 2.5rem 2rem;
-  border-radius: 12px;
-  min-width: 140px;
-  text-align: center;
-  font-size: 1.1em;
-  box-shadow: 0 2px 8px #0001;
+.what-i-do h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 2rem;
 }
-.skills-about {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 2.5rem 0;
-}
-.skills, .about {
-  flex: 1;
-}
-.skills-list {
+.services-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7em;
-  margin-top: 1em;
-}
-.skills-list span {
-  background: #f3f1ea;
-  padding: 0.4em 1em;
-  border-radius: 6px;
-  font-size: 1em;
-}
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-.about-content .photo {
-  width: 60px;
-  height: 60px;
-  background: #ecebe6;
-  border-radius: 50%;
-}
-.contact-section {
-  display: flex;
-  justify-content: space-between;
   gap: 2rem;
-  margin: 2.5rem 0;
+  justify-content: center;
 }
-.contact-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7em;
+.service-card {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid #f1f1f1;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 8px 32px #e91e6344;
+  transform: translateY(-6px) scale(1.03);
+}
+.service-icon {
+  font-size: 2.2rem;
+  color: #e91e63;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.portfolio-section {
   background: #fff;
-  padding: 2em 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #0001;
+  padding: 3rem 0 2rem 0;
 }
-.contact-form input, .contact-form textarea {
-  padding: 0.7em;
-  border: 1px solid #ecebe6;
-  border-radius: 6px;
-  font-size: 1em;
+.portfolio-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 2rem;
 }
-.contact-form button {
-  background: #d35d4e;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.7em;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin-top: 0.5em;
-}
-.contact-links {
+.portfolio-gallery {
   display: flex;
-  flex-direction: column;
-  gap: 1.2em;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.portfolio-card {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  overflow: hidden;
+  width: 300px;
+  border: 1px solid #f1f1f1;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.portfolio-card:hover {
+  box-shadow: 0 8px 32px #e91e6344;
+  transform: translateY(-6px) scale(1.03);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.portfolio-info {
+  padding: 1.2rem 1rem 1.2rem 1rem;
+}
+.portfolio-category {
+  color: #e91e63;
+  font-size: 0.95em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.resume-section {
+  background: #fff;
+  padding: 3rem 0 2rem 0;
+}
+.resume-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 2rem;
+}
+.resume-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.resume-tab {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  border: 1px solid #f1f1f1;
+}
+.resume-block {
+  margin-bottom: 1.2rem;
+}
+.resume-date {
+  color: #e91e63;
+  font-weight: 600;
+  font-size: 0.98em;
+}
+.resume-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.resume-skills li {
+  margin-bottom: 0.5em;
+  color: #23272f;
+}
+
+.testimonials-section, .clients-section, .pricing-section, .blog-section, .contact-section {
+  background: #fff;
+  padding: 3rem 0 2rem 0;
+}
+.testimonials-section h2, .clients-section h2, .pricing-section h2, .blog-section h2, .contact-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 2rem;
+}
+.testimonial-card {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  padding: 2rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #f1f1f1;
+  color: #23272f;
+  font-style: italic;
+}
+.testimonial-author {
+  display: block;
+  margin-top: 1rem;
+  color: #e91e63;
+  font-weight: 600;
+}
+.clients-logos {
+  display: flex;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.contact-links a img {
-  width: 32px;
-  height: 32px;
+.clients-logos img {
+  height: 48px;
+  filter: grayscale(0.2);
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px #e91e6322;
 }
-@media (max-width: 900px) {
-  .skills-about, .contact-section {
+
+.pricing-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing-card {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+}
+.price {
+  color: #e91e63;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: block;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog-card {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  overflow: hidden;
+  width: 300px;
+  border: 1px solid #f1f1f1;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.blog-card:hover {
+  box-shadow: 0 8px 32px #e91e6344;
+  transform: translateY(-6px) scale(1.03);
+}
+.blog-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.blog-card h3 {
+  font-size: 1.1em;
+  margin: 1rem 0 0.5rem 0;
+}
+.blog-card p {
+  color: #6c757d;
+  font-size: 0.98em;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.contact-form {
+  background: #f5f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e91e6322;
+  padding: 2rem 1.5rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  border: 1px solid #f1f1f1;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  background: #fff;
+  font-family: inherit;
+}
+.contact-form button {
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #e91e6333;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact-form button:hover {
+  background: #d81b60;
+  box-shadow: 0 4px 24px #e91e6344;
+}
+.contact-infos {
+  text-align: center;
+  color: #6c757d;
+}
+.contact-infos a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.main-footer {
+  background: #fff;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  color: #6c757d;
+  padding: 2rem 0 1rem 0;
+  font-size: 1em;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #f1f1f1;
+  margin: 0;
+}
+
+/* Responsive avec Bootstrap : on laisse Bootstrap gérer la grille principale */
+@media (max-width: 991px) {
+  .header-content {
     flex-direction: column;
+    text-align: center;
     gap: 1.5rem;
-  }
-  .projects-list {
-    flex-direction: column;
-    align-items: center;
   }
 } 

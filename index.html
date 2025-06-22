@@ -4,73 +4,258 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hassan Dev - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Hassan Dev</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="skills.html">Compétences</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="cv.pdf" class="cv-link">Télécharger mon CV</a></li>
-      </ul>
-    </nav>
+  <header class="main-header">
+    <div class="header-content container d-flex flex-column flex-lg-row align-items-center gap-4">
+      <div class="header-photo mb-4 mb-lg-0">
+        <img src="assets/images/photo.jpg" alt="Photo de Hassan" />
+      </div>
+      <div class="header-info text-center text-lg-start">
+        <span class="welcome">Bienvenue sur mon portfolio</span>
+        <h1>Salut, je suis <span class="accent">Hassan</span><br>Développeur Web Junior</h1>
+        <p class="header-desc">Passionné par le développement web, je conçois des sites modernes et performants. Curieux et motivé, j'aime apprendre et relever de nouveaux défis.</p>
+        <div class="header-socials mb-3">
+          <a href="mailto:hassan302025@outlook.fr"><img src="assets/images/mail.svg" alt="Email"></a>
+          <a href="https://github.com/hassan312-god" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
+          <a href="https://linkedin.com/in/tonprofil" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <a href="cv.pdf" class="btn-main">Télécharger mon CV</a>
+      </div>
+    </div>
   </header>
   <main>
-    <section class="hero">
-      <h1>Salut, moi c'est <span class="highlight">Hassan</span></h1>
-      <h2>Développeur Web Junior</h2>
-      <a href="#projets" class="btn-main">Voir mes projets</a>
-    </section>
-    <section id="projets" class="projects-section">
-      <h3>Projets</h3>
-      <div class="projects-list">
-        <div class="project-card">Projet 1</div>
-        <div class="project-card">Projet 2</div>
-        <div class="project-card">Projet 3</div>
-      </div>
-    </section>
-    <section class="skills-about">
-      <div class="skills">
-        <h3>Compétences</h3>
-        <div class="skills-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
-        </div>
-      </div>
-      <div class="about">
-        <h3>À propos</h3>
-        <div class="about-content">
-          <div class="photo"></div>
-          <div>
-            <strong>Petite bio / photo</strong>
-            <p>Développeur passionné...</p>
+    <section class="what-i-do py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">What I Do</h2>
+        <div class="row g-4 services-cards justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">💡</span>
+              <h3>Business Strategy</h3>
+              <p>Conseil et stratégie digitale pour booster votre activité.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">💻</span>
+              <h3>App Development</h3>
+              <p>Développement d'applications web modernes et performantes.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">📱</span>
+              <h3>Mobile Apps</h3>
+              <p>Création d'applications mobiles adaptées à vos besoins.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">📈</span>
+              <h3>SEO Marketing</h3>
+              <p>Optimisation SEO pour améliorer votre visibilité en ligne.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">🎨</span>
+              <h3>UI/UX Design</h3>
+              <p>Design d'interfaces intuitives et expérience utilisateur optimale.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex">
+            <div class="service-card w-100">
+              <span class="service-icon">📝</span>
+              <h3>Rédaction Web</h3>
+              <p>Rédaction de contenus clairs et impactants pour le web.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact-section">
-      <form class="contact-form">
-        <h3>Envoyer</h3>
-        <input type="text" name="name" placeholder="Nom" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-      <div class="contact-links">
-        <a href="mailto:hassan302025@outlook.fr"><img src="assets/images/mail.svg" alt="Email"></a>
-        <a href="https://github.com/hassan312-god" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
-        <a href="https://linkedin.com/in/tonprofil" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+    <hr class="separator">
+    <section class="portfolio-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">My Portfolio</h2>
+        <div class="row g-4 portfolio-gallery justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet1.jpg" alt="Projet 1">
+              <div class="portfolio-info">
+                <span class="portfolio-category">Web Design</span>
+                <h3>Site vitrine association</h3>
+                <p>Création d'un site moderne pour une association.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet2.jpg" alt="Projet 2">
+              <div class="portfolio-info">
+                <span class="portfolio-category">App</span>
+                <h3>Gestion de tâches</h3>
+                <p>Application web pour organiser ses tâches au quotidien.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="portfolio-card w-100">
+              <img src="assets/images/projet3.jpg" alt="Projet 3">
+              <div class="portfolio-info">
+                <span class="portfolio-category">Mobile</span>
+                <h3>App mobile</h3>
+                <p>Développement d'une app mobile pour un client.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Ajoute d'autres projets ici -->
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="resume-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">My Resume</h2>
+        <div class="row g-4 resume-tabs justify-content-center">
+          <div class="col-12 col-md-4 d-flex">
+            <div class="resume-tab w-100">
+              <h3>Éducation</h3>
+              <div class="resume-block">
+                <span class="resume-date">2021 - 2023</span>
+                <h4>Formation Développeur Web</h4>
+                <p>Centre de formation X - HTML, CSS, JavaScript, React, Node.js</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex">
+            <div class="resume-tab w-100">
+              <h3>Expérience</h3>
+              <div class="resume-block">
+                <span class="resume-date">2023 - Aujourd'hui</span>
+                <h4>Développeur Web Junior</h4>
+                <p>Projets freelance et personnels, création de sites et applications web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex">
+            <div class="resume-tab w-100">
+              <h3>Compétences</h3>
+              <ul class="resume-skills">
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript / React</li>
+                <li>Node.js / MongoDB</li>
+                <li>UI/UX Design</li>
+                <li>SEO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="testimonials-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Témoignages</h2>
+        <div class="testimonial-card mx-auto">
+          <p>"Hassan a su comprendre nos besoins et livrer un site moderne et efficace. Je recommande !"</p>
+          <span class="testimonial-author">— Client satisfait</span>
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="clients-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Clients</h2>
+        <div class="row clients-logos justify-content-center align-items-center g-4">
+          <div class="col-auto"><img src="assets/images/client1.png" alt="Client 1"></div>
+          <div class="col-auto"><img src="assets/images/client2.png" alt="Client 2"></div>
+          <div class="col-auto"><img src="assets/images/client3.png" alt="Client 3"></div>
+          <!-- Ajoute d'autres logos ici -->
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="pricing-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Tarifs</h2>
+        <div class="row g-4 pricing-cards justify-content-center">
+          <div class="col-12 col-md-4 d-flex">
+            <div class="pricing-card w-100">
+              <h3>Basique</h3>
+              <p>Site vitrine simple</p>
+              <span class="price">à partir de 300€</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex">
+            <div class="pricing-card w-100">
+              <h3>Standard</h3>
+              <p>Site dynamique ou app simple</p>
+              <span class="price">à partir de 600€</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex">
+            <div class="pricing-card w-100">
+              <h3>Premium</h3>
+              <p>Projet sur-mesure, app avancée</p>
+              <span class="price">sur devis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="blog-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Mon Blog</h2>
+        <div class="row g-4 blog-cards justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="blog-card w-100">
+              <img src="assets/images/blog1.jpg" alt="Blog 1">
+              <h3>Comment réussir son portfolio ?</h3>
+              <p>Conseils pour créer un portfolio qui attire l'œil des recruteurs.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="blog-card w-100">
+              <img src="assets/images/blog2.jpg" alt="Blog 2">
+              <h3>Les tendances web 2024</h3>
+              <p>Découvrez les dernières tendances en design et développement web.</p>
+            </div>
+          </div>
+          <!-- Ajoute d'autres articles ici -->
+        </div>
+      </div>
+    </section>
+    <hr class="separator">
+    <section class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Nom" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+            <div class="contact-infos mt-4">
+              <p>Email : <a href="mailto:hassan302025@outlook.fr">hassan302025@outlook.fr</a></p>
+              <p>LinkedIn : <a href="https://linkedin.com/in/tonprofil" target="_blank">linkedin.com/in/tonprofil</a></p>
+              <p>GitHub : <a href="https://github.com/hassan312-god" target="_blank">github.com/hassan312-god</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="main-footer">
+    <p>&copy; 2024 Hassan Bacri KEITA. Tous droits réservés.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html> 
